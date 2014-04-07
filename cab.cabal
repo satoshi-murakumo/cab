@@ -23,14 +23,15 @@ Library
   Build-Depends:        base >= 4.0 && < 5
                       , Cabal
                       , attoparsec >= 0.10
-                      , attoparsec-conduit >= 0.3
                       , bytestring
-                      , conduit >= 0.3
                       , containers
                       , directory
                       , filepath
                       , process
-                      , process-conduit >= 0.1
+                      , conduit == 1.0.17.1
+                      , process-conduit == 1.0.0.1
+                      , attoparsec-conduit == 1.0.1.2
+                      , shakespeare-text == 1.0.2
   Exposed-Modules:	Distribution.Cab
                         Distribution.Cab.PkgDB
                         Distribution.Cab.Printer
@@ -50,14 +51,15 @@ Executable cab
                       , cab
                       , Cabal >= 1.18
                       , attoparsec >= 0.10
-                      , attoparsec-conduit >= 0.3
                       , bytestring
-                      , conduit >= 0.3
                       , containers
                       , directory
                       , filepath
                       , process
-                      , process-conduit >= 0.1
+                      , conduit == 1.0.17.1
+                      , process-conduit == 1.0.0.1
+                      , attoparsec-conduit == 1.0.1.2
+                      , shakespeare-text == 1.0.2
   if os(windows)
      Build-Depends:
   else
